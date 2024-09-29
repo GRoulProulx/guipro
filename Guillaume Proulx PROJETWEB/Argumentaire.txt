@@ -1,0 +1,32 @@
+-- les fonctionnalités de ma page --
+
+J'ai une navigation interactive, un carroussel et puis des boutons.
+De plus, en cliquant sur le carroussel, on peu agrandir les images.
+Ensuite, au déroulement de ma page, il y a un déclenchement d'animations
+sur les gros titres.
+
+
+
+
+--les choix de design --
+
+Tou d'abord, le design n'étais pas ma première priorité.
+Donc, j'y suis aller un peu pêle mêle. Alors, il y a place à l'amilioration. (TODO)
+
+Par exemple, aller me chercher une vrai palette de couleur sur colormind.io (TODO)
+
+
+
+--les difficultés rencontrées--
+
+Les animations, un manque de créativité peut-être, et le manque d'expérience avec celle-ci étais une des mes plus grosse difficultée j'ai rencontré.
+
+J'ai aussi eu un peu de difficulté à organiser mes trois TP, par le simple fait que je me suis beacoup amilioré depuis.
+Donc, entre mon code du début de la session et la fin, c'étais un peu difficile a gèrer(Je brisait mon site, donc j'ai opté de rien faire). Bref, j'ai manquer de temps. (TODO : Recommencer le CSS)
+
+D'ailleur, sur ce point, je dois amiliorer les deux autres pages. (TODO)
+
+
+--la structure de mon code--
+
+Tout d'abord, pour la structure, je vais me basé sur la structure de mon proffesseur(pédagogie 101). Donc, pour toutes composantes CSS et Java Script, je vais faire un différent fichier pour chacun. Je me suis assuré que tout les exports/import vont être présent.

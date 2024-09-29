@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,700;0,800;1,100&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/a-propos.css" />
+  <script type="module" src="assets/js/components/popup.js"></script>
+  <script type="module" src="assets/js/pages/a-propos.js"></script>
+  <script type="module" src="assets/js/classes/ScrollAnimator.js"></script>
+
+  <title>A propos TP3</title>
+</head>
+
+<body>
+  <header class="nav-conteneur">
+    <img class="logo" src="assets/img/logo.PNG" alt="logo" />
+    <div class="nav_bar"></div>
+    <div class="nav_bar mode-nightday">
+      <div class="btn-night" data-mode="night">Mode-nuit</div>
+      <div class="btn-day" data-mode="day">Mode-jour</div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Promotions Spéciales</h1>
+      <p>
+        Ne manquez pas nos offres spéciales! Actuellement, profitez de
+        l'offre trois plus un gratuit: achetez trois affiches et recevez-en une
+        gratuite. C'est l'occasion parfaite d'élargir votre collection ou de
+        faire un cadeau mémorable.
+      <div class="img-footer">
+        <img src="assets/img/affichefilms.png" alt="" />
+      </div>
+      </p>
+      <h1>Affiches de Films Classiques</h1>
+      <p>
+        Découvrez notre gamme d'affiches de films classiques, comprenant des
+        chefs-d'œuvre intemporels qui ont marqué l'histoire du cinéma. Plongez
+        dans un univers cinématographique riche et varié, où vous trouverez
+        des affiches emblématiques de films cultes, allant des chefs-d'œuvre
+        du noir et blanc aux classiques modernes. Que vous soyez un passionné
+        de cinéma ou un collectionneur averti, notre collection saura vous
+        séduire.
+      </p>
+      <h1>Affiches de Films Récents</h1>
+      <p>
+        Restez à jour avec les dernières sorties en explorant nos affiches de
+        films récents, parfaites pour les fans des nouveautés
+        cinématographiques. Que vous soyez passionné de blockbusters,
+        d'indépendants ou de films d'animation, notre collection vous offre un
+        aperçu visuel captivant des histoires qui font vibrer le grand écran.
+      </p>
+      <h1>Pourquoi Choisir Nos Affiches ?</h1>
+      <p>
+        <b>Qualité Supérieure</b> : Chaque affiche est imprimée sur du papier
+        de haute qualité pour garantir une durabilité et une esthétique
+        exceptionnelle. <br /><br />
+        <b>Variété de Tailles</b> : Nous offrons une large gamme de tailles
+        pour s'adapter à tous vos espaces. <br /><br />
+        <b>Originalité</b> : Nos affiches sont soigneusement sélectionnées
+        pour leur caractère unique et leur attrait visuel.
+      </p>
+      <h1>Nos nouvelles affiches!</h1>
+    </section>
+    <div class="conteneur-carroussel" data-carroussel>
+      <img class="img-carroussel passe" src="assets/img/affiches/pulpfiction.webp" alt="" />
+      <div class="btn-conteneur">
+        <div class="btn" data-direction="1">&#11164;</div>
+        <div class="btn" data-direction="-1">&#11166;</div>
+      </div>
+    </div>
+    <div id="popupForm" class="overlay">
+      <div class="popup">
+        <h2>Contactez nous</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <form>
+            <div class="form-group">
+              <label for="name"><strong><b>Nom:</b></strong></label>
+              <input type="text" id="name" name="name" placeholder="Entrez votre nom" />
+            </div>
+            <div class="form-group">
+              <label for="email"><strong><b>Courriel:</b></strong></label>
+              <input type="email" id="email" name="email" placeholder="Entrez votre courriel" />
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section>
+      <h1>
+        Engravures de citations<br />
+        sur vos affiches!
+      </h1>
+      <p>"In space, no one can hear you scream." - <b>Alien (1979)</b></p>
+      <p>
+        "Life is like a box of chocolates. You never know what you're gonna
+        get." - <b>Forrest Gump (1994)</b>
+      </p>
+      <p>
+        "The greatest trick the Devil ever pulled was convincing the world he
+        didn't exist." - <b>The usual Suspects (1995)</b>
+      </p>
+    </section>
+    <section>
+      <h1>Venez-nous voir</h1>
+      <p>
+        Visitez nous à notre nouvelle adresse! Pour toute question ou demande
+        particulière, n'hésitez pas à nous contacter via notre formulaire en
+        ligne ou par email. Nous sommes là pour vous aider à trouver l'affiche
+        parfaite!
+      </p>
+      <p><button>Direction</button></p>
+    </section>
+    <section>
+      <h1>Devenez membres et gagnez!</h1>
+      <p>
+        Une fois membre, parmis plusieurs privilèges, vous pouvez participez à
+        une multitudes de tirages! Ne tardez pas!
+      </p>
+    </section>
+    <section>
+      <h1>Restez Connecté</h1>
+      <p>
+        N'oubliez pas de revenir régulièrement sur notre site pour découvrir les dernières
+        mises à jour et ne manquer aucune sortie incontournable. Le monde du
+        cinéma évolue rapidement, et nous sommes là pour vous tenir informé
+        des nouveautés qui feront parler d'elles!
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tous droit réserver&COPY;</p>
+  </footer>
+</body>
+
+</html>

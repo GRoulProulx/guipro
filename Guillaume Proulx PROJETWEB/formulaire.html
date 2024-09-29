@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,700;0,800;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/a-propos.css" />
+    <link rel="stylesheet" href="assets/css/formulaire.css" />
+    <script src="assets/js/formulaire.js" defer></script>
+    <script type="module" src="assets/js/sections.js"></script>
+    <script type="module" src="assets/js/components/navigation.js"></script>
+    <title>Travail pratique 2</title>
+  </head>
+  <body>
+   <header class="nav-conteneur">
+    <img class="logo" src="assets/img/logo.PNG" alt="logo" />
+    <div class="nav_bar"></div>
+    <div class="nav_bar mode-nightday">
+      <div class="btn-night" data-mode="night">Mode-nuit</div>
+      <div class="btn-day" data-mode="day">Mode-jour</div>
+    </div>
+  </header>
+
+    <h1>Formulaire d'achat</h1>
+    <form action="" method="get" class="form-principal">
+      <section class="info-client" data-page="1">
+        <h2>Informations sur le client</h2>
+        
+        <label for="nom-complet">Nom Complet: 
+        <span class="oubligatoire">*Obligatoire</span></label>
+        <input type="nom" autofocus name="nom" placeholder="Nom complet" minlenght="5" maxlenght="35" id="nom-complet" required/>
+
+        <label for="email">Courriel: 
+        <span class="oubligatoire">*Obligatoire</span></label>
+        <input type="email" name="email" placeholder="@gmail.com" minlenght="5" maxlenght="25" id="email" required/>
+        
+        <label for="telephone">Numéro de Téléphone: 
+        <span class="oubligatoire">*Obligatoire</span></label>
+        <input type="text" name="telephone" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="555-555-5555" minlenght="5" maxlenght="25"
+        id="telephone" required />
+        
+        <label for="adresse">Adresse: 
+        <span class="oubligatoire">*Obligatoire</span></label>
+        <input type="text" name="adresse" placeholder="Ex. 111 St-Laurent" minlenght="5" maxlenght="25" id="adresse" required />
+      
+        <label for="ville">Ville: 
+        <span class="oubligatoire">*Obligatoire</span></label>
+        <input type="text" name="ville" placeholder="Ex. Montréal" minlenght="5" maxlenght="25" id="ville" required />
+      
+        <label for="codepostal">Code Postal: 
+        <span class="oubligatoire">*Obligatoire</span></label>
+        <input type="text" name="codepostal" placeholder="A1B 2C3"  id="text" pattern="[A-z][0-9][A-z]\s?[0-9][A-z][0-9]" required />
+
+        <div class="bouton bouton-continuer disabled" data-direction="1" >Continuer</div>
+      </section>
+
+      <section class="info-livraison" data-page="2">
+        <h2>Informations sur la livraison</h2>
+        <label for="date">Date idéale de livraison: <span class="oubligatoire">*Obligatoire</span>
+        </label>
+        <input type="date" class="date" name="date" min="2024-07-08" max="2024-09-29" id="date" required /><br />
+        <div class="choix-date">
+          <label for="checkbox">Cocher si vous voulez choisir une succursale :</label>
+          <input type="checkbox" class="checkbox" name="choixsuccursale" id="checkbox"/>
+        </div>
+        <div>
+          <label for="select"><b>Choisissez une succursale</b> :</label>
+          <select name="succursale" class="select" id="select">
+            <option value="1">Succursale de Québec</option>
+            <option value="2">Succursale de Montréal</option>
+            <option value="3">Succursale de Rimouski</option>
+          </select>
+        </div>
+        <br/>
+
+        <div class="choix-livraison">
+          <label for="radio"><b>Service de livraison</b>:</label>
+          <b>UPS</b> :
+          <input type="radio" name="livraison" value="UPS" id="radio1" checked />
+          <b>FedEx</b> :<input type="radio"  name="livraison" value="FedEx" id="radio2" />
+          <b>Canada Post</b> :<input type="radio"  name="livraison" value="CanadaPost"  id="radio3" />
+        </div>
+        <div class="bouton">
+          <div class="bouton bouton-continuer disabled" data-direction="1">Continuer</div>
+          <div class="bouton bouton-arriere" data-direction="-1">Retour</div>
+        </div>
+        </section>
+
+      <section class="info-resume" data-page="3">
+        <h2>Résumé</h2>
+        <p>
+          Nom Complet:
+          <span data-name="nom"></span>
+        </p>
+        <p>
+          Courriel:
+          <span data-name="email"></span>
+        </p>
+        <p>
+          Téléphone:
+          <span data-name="telephone"></span>
+        </p>
+        <p>
+          Adresse:
+          <span data-name="adresse"></span>
+        </p>
+        <p>
+          Ville:
+          <span data-name="ville"></span>
+        </p>
+        <p>
+          Code postal:
+          <span data-name="codepostal"></span>
+        </p>
+        <div class="bouton bouton-arriere" data-direction="-1" >Retour</div>
+        <input class="submitted" type="submit" value="TERMINER">
+      </section>
+    </form>
+  </body>
+</html>

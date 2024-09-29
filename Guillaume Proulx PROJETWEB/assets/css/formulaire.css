@@ -1,0 +1,120 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+
+/* Les classes */
+
+.submitted {
+    background-color: rgb(51, 40, 212);
+    color: white;
+    margin: 15px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.oubligatoire {
+    color: rgb(219, 52, 52);
+}
+
+.info-client,
+.info-livraison,
+.info-resume
+{
+    gap: 10px;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 15px; 
+    background-color: rgb(206, 204, 204);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bouton-continuer {
+    display: flex;
+    margin-bottom: -6px;
+    background-color: black;
+    color: white;
+    align-self: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bouton-arriere {
+    margin: -10px;
+    background-color: black;
+    color: white;
+    align-self: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.lien-retour {
+    text-decoration: none;
+    font-size: larger;
+    display: flex;
+    align-self: flex-start;
+}
+
+
+
+/* TESTS */
+
+form input[type="submit"],
+form input[type="reset"],
+form button {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 50ms;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form button:hover {
+    transform: scale(1.03);
+    text-decoration: underline;
+}
+
+form input[type="submit"]:disabled,
+form button:disabled {
+    background-color: rgb(19, 13, 13);
+    pointer-events: none;
+}
+
+form input:user-invalid,
+form textarea:user-invalid,
+form select:user-invalid {
+    border-color: red;
+    border-width: 2px;
+}
+
+form input:user-valid,
+form textarea:user-valid
+{
+    border-color: lime;
+    border-width: 2px;
+}
+
+.disabled {
+    background-color: grey;
+    pointer-events: none;
+}
+
+.invisible {
+    display: none;
+}
